@@ -3,8 +3,12 @@
 
     <string name="titreHome">Home</string>
     <string name="titreAide">Aide</string>
-    <string name="titreSimulateur">Simulateur</string>
+    <string name="titreSimulateur">Simulateur taux d\'alcolémie</string>
     <string name="titreUrgence">Appels Urgence</string>
-    <string name="titreJeu">Jeu</string>
+    <string name="titreJeu">Désigne ton SAM</string>
     <string name="titreSecours">Consignes de Secours</string>
+    <string name="texteBouton112">Appeler le 112</string>
+    <string name="texteBouton18">Appeler le 18</string>
+    <string name="texteBouton15">Appeler le 15</string>
+    <string name="texteBouton17">Appeler le 17</string>
 </resources>

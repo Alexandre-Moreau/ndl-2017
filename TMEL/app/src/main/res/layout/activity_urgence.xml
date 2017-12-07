@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +7,58 @@
     tools:context="com.example.joffrey.tmel.UrgenceActivity">
 
     <Button
-        android:id="@+id/btnHome"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/titreHome"
-        android:onClick="onHomeClick"/>
+        android:id="@+id/btn112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texteBouton112"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_appeler"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_telephone"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:padding="@dimen/padding_button"
+        android:layout_centerHorizontal="true" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texteBouton18"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_appeler"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_telephone"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:padding="@dimen/padding_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn112"/>
+
+    <Button
+        android:id="@+id/btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texteBouton15"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_appeler"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_telephone"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:padding="@dimen/padding_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn18"/>
+
+    <Button
+        android:id="@+id/btn17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texteBouton17"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_appeler"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_telephone"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:padding="@dimen/padding_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn15"/>
+
+</RelativeLayout>

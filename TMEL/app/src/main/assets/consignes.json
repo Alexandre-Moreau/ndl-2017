@@ -1,0 +1,17 @@
+{
+  "gestes": [
+    { "Titre" : "Protéger le périmètre accidenté",
+      "Details" : "Que l’on soit impliqué dans l’accident ou parmi les premiers à arriver sur place, le gilet rétro-réfléchissant – que chacun est supposé avoir dans son coffre – permet de mieux être vu par les autres automobilistes. Allumer ses feux de détresse est également un bon moyen de rendre la zone plus visible, après avoir positionné un triangle de signalisation à quelques mètres du véhicule accidenté (au mieux à 5-10 mètres du lieu de l'accident)"
+    },
+    { "Titre" : "Alertez les autorités nécessaires",
+      "Details" : "En cas d’accident corporel, il est primordial d’alerter au plus vite les secours en composant le 15 ou le 18 (112 depuis un téléphone portable), mais aussi de joindre les forces de l’ordre au 17. Peu importe la gravité de la situation, il ne faut sous aucun prétexte déplacer un blessé, à moins qu’il ne soit en danger (près d’un incendie, d’une explosion menaçante…). Prendre impérativement le temps de se présenter et de dire l’endroit où l’appelant se trouve, il faudra expliquer le nombre de blessés, gabarits, etc… Il faudra ensuite suivre les instructions données par le service contacté! TRES IMPORTANT: Attendre que l’interlocuteur autorise de raccrocher!"
+    },
+    { "Titre" : "S'occuper de la victime",
+      "Details" : "Si la personne est consciente et blessée, lui parler pour la maintenir éveillée et consciente en attendant l'arrivée des secours, selon l'état de la victime, lui conseillé de ne pas parler ni de bouger pour éviter d'aggraver les blessures"
+    },
+    { "Titre" : "Prendre les coordonnées",
+      "Details" : "Si il s'agit d'un accident impliquant plusieurs véhicules, il est recommandé de récupérer les coordonnées de potentiels témoins de l'accident si jamais les secours ou les services de police en ont besoin"
+    }
+  ]
+}
+

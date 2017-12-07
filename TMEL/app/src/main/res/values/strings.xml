@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TMEL</string>
+
+    <string name="titreHome">Home</string>
+    <string name="titreAide">Aide</string>
+    <string name="titreSimulateur">Simulateur</string>
+    <string name="titreUrgence">Appels Urgence</string>
+    <string name="titreJeu">Jeu</string>
+    <string name="titreSecours">Consignes de Secours</string>
+</resources>

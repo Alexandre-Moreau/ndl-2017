@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joffrey.tmel.HomeActivity">
+
+    <Button
+        android:id="@+id/btnUrgence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreUrgence"
+        android:onClick="onUrgenceClick" />
+
+    <Button
+        android:id="@+id/btnSimulateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreSimulateur"
+        android:layout_below="@+id/btnUrgence"
+        android:onClick="onSimulateurClick"/>
+
+    <Button
+        android:id="@+id/btnSecours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreSecours"
+        android:layout_below="@+id/btnSimulateur"
+        android:onClick="onSecoursClick"/>
+
+    <Button
+        android:id="@+id/btnJeu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreJeu"
+        android:layout_below="@+id/btnSecours"
+        android:onClick="onJeuClick"/>
+
+    <Button
+        android:id="@+id/btnAide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreAide"
+        android:layout_below="@+id/btnJeu"
+        android:onClick="onAideClick"/>
+
+
+</RelativeLayout>

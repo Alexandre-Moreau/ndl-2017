@@ -6,6 +6,145 @@
     android:layout_height="match_parent"
     tools:context="com.example.joffrey.tmel.SimulateurActivity">
 
+    <TextView
+        android:id="@+id/tvBiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvBiere"/>
 
+    <EditText
+        android:id="@+id/etBiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_below="@+id/tvBiere"/>
+
+    <TextView
+        android:id="@+id/tvVin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etBiere"
+        android:text="@string/tvVin"/>
+
+    <EditText
+        android:id="@+id/etVin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/etBiere"
+        android:layout_below="@+id/tvVin"/>
+
+    <TextView
+        android:id="@+id/tvShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etVin"
+        android:text="@string/tvShot"/>
+
+    <EditText
+        android:id="@+id/etShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/etVin"
+        android:layout_below="@+id/tvShot"/>
+
+    <TextView
+        android:id="@+id/tvCocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etShot"
+        android:text="@string/tvCocktail"/>
+
+    <EditText
+        android:id="@+id/etCocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/etShot"
+        android:layout_below="@+id/tvCocktail"/>
+
+    <TextView
+    android:id="@+id/tvTaille"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/etBiere"
+    android:text="@string/tvTaille"/>
+
+    <EditText
+        android:id="@+id/etTaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:layout_below="@+id/etBiere"/>
+
+    <TextView
+        android:id="@+id/tvMasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBiere"
+        android:layout_toRightOf="@+id/etTaille"
+        android:text="@string/tvMasse"/>
+
+    <EditText
+        android:id="@+id/etMasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/etTaille"
+        android:layout_below="@+id/etBiere"/>
+
+    <TextView
+        android:id="@+id/tvSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTaille"
+        android:text="@string/tvSexe"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgSexe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvSexe"
+        android:checkedButton="@+id/rbFemme">
+        <RadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbFemme" />
+        <RadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbHomme"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCalcule"
+        android:onClick="onCalculeClick"
+        android:layout_below="@+id/rgSexe"/>
+
+    <TextView
+        android:id="@+id/tvResultatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalcule"
+        android:text="@string/tvResultat"/>
+
+    <TextView
+        android:id="@+id/tvResultatValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResultatLabel"/>
 
 </RelativeLayout>

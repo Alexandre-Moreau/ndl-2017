@@ -30,8 +30,4 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(new Intent(this, JeuActivity.class));
     }
 
-    public void onAideClick(View view) {
-        startActivity(new Intent(this, AideActivity.class));
-    }
-
 }

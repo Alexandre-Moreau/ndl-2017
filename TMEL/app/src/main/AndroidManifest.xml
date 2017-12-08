@@ -12,18 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".UrgenceActivity" android:screenOrientation="portrait">
+        <activity android:name=".Splash" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".UrgenceActivity" android:screenOrientation="portrait" />
         <activity android:name=".HomeActivity" android:screenOrientation="portrait" />
         <activity android:name=".SimulateurActivity" android:screenOrientation="portrait" />
         <activity android:name=".SecoursActivity" android:screenOrientation="portrait" />
         <activity android:name=".JeuActivity" android:screenOrientation="portrait" />
-        <activity android:name=".AideActivity" android:screenOrientation="portrait" />
     </application>
 
 </manifest>

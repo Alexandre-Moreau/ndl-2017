@@ -24,4 +24,9 @@
     <string name="tvSexe">Sexe</string>
     <string name="btnCalcule">Calcule</string>
     <string name="tvResultat">Résultat</string>
+    <string name="titrePompette">Voyons si t\'es pompette</string>
+    <string name="texteSousTitrePompette">Essaie de répondre aux questions</string>
+    <string name="sousTitreJeu">Choisissez tous un numéro pour définir le SAM de ce soir</string>
+    <string name="tvNbPersonnes">Nombre de personnes</string>
+    <string name="btnDesigne">Désigne</string>
 </resources>

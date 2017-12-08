@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class SimulateurActivity extends AppCompatActivity {
@@ -43,22 +44,23 @@ public class SimulateurActivity extends AppCompatActivity {
         EditText etVin = (EditText) findViewById(R.id.etVin);
         EditText etShot = (EditText) findViewById(R.id.etShot);
         EditText etCocktail = (EditText) findViewById(R.id.etCocktail);
-        //EditText etTaille = (EditText) findViewById(R.id.etTaille);
         EditText etMasse = (EditText) findViewById(R.id.etMasse);
+        RadioButton rbHomme = (RadioButton) findViewById(R.id.rbHomme);
 
         int nbBiere = toInt(etBiere.getText().toString());
         int nbVin = toInt(etVin.getText().toString());
         int nbShot = toInt(etShot.getText().toString());
         int nbCocktail = toInt(etCocktail.getText().toString());
-        //int taille = Integer.valueOf(etBiere.getText().toString());
         double masse = toDouble(etMasse.getText().toString());
-        double k = 0.7; // Faire le test
+        double k = 0.6;
+
+        if(rbHomme.isChecked()){
+            k = 0.7;
+        }
 
         if(masse != 0){
-            /*
-                Cocktail: 40° dilué à 50% -> 10 cl à 20°
-             */
-            double resultat = (nbBiere*10.8 + nbVin*9.6 + nbShot*9.6 + nbCocktail*18 )/masse*k;
+            // Cocktail: 40° dilué à 50% -> 10 cl à 20°
+            double resultat = (nbBiere*10.8 + nbVin*9.6 + nbShot*9.6 + nbCocktail*18 )/(masse*k);
             tvResultat.setText(Math.round(resultat * 100.0) / 100.0 + " g/l"); //arrondi à 2 chiffres
         }else{
             tvResultat.setText("Entrez une masse");

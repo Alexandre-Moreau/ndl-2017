@@ -4,19 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.joffrey.tmel.SimulateurActivity">
+    tools:context="com.example.joffrey.tmel.SimulateurActivity"
+    android:paddingLeft="@dimen/paddingLeftLayout">
+
+    <TextView
+        android:id="@+id/tvTitrePompette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titrePompette"
+        android:textSize="@dimen/sizeTitrePompette"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/marginTitrePompette"/>
+
+    <TextView
+        android:id="@+id/tvSousTitrePompette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitrePompette"
+        android:text="@string/texteSousTitrePompette"
+        android:layout_margin="@dimen/marginTitrePompette" />
 
     <TextView
         android:id="@+id/tvBiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSousTitrePompette"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvBiere"/>
 
     <EditText
         android:id="@+id/etBiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="2"
+        android:ems="6"
         android:inputType="number"
         android:layout_below="@+id/tvBiere"/>
 
@@ -25,13 +45,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/etBiere"
+        android:layout_below="@+id/tvSousTitrePompette"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvVin"/>
 
     <EditText
         android:id="@+id/etVin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="2"
+        android:ems="6"
         android:inputType="number"
         android:layout_toRightOf="@+id/etBiere"
         android:layout_below="@+id/tvVin"/>
@@ -40,16 +62,16 @@
         android:id="@+id/tvShot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/etVin"
+        android:layout_below="@+id/etBiere"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvShot"/>
 
     <EditText
         android:id="@+id/etShot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="2"
+        android:ems="6"
         android:inputType="number"
-        android:layout_toRightOf="@+id/etVin"
         android:layout_below="@+id/tvShot"/>
 
     <TextView
@@ -57,54 +79,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/etShot"
+        android:layout_below="@+id/etVin"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvCocktail"/>
 
     <EditText
         android:id="@+id/etCocktail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="2"
+        android:ems="6"
         android:inputType="number"
         android:layout_toRightOf="@+id/etShot"
         android:layout_below="@+id/tvCocktail"/>
 
     <TextView
-    android:id="@+id/tvTaille"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/etBiere"
-    android:text="@string/tvTaille"/>
-
-    <EditText
-        android:id="@+id/etTaille"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="4"
-        android:inputType="number"
-        android:layout_below="@+id/etBiere"/>
-
-    <TextView
         android:id="@+id/tvMasse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etBiere"
-        android:layout_toRightOf="@+id/etTaille"
+        android:layout_below="@+id/etShot"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvMasse"/>
 
     <EditText
         android:id="@+id/etMasse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="4"
+        android:ems="12"
         android:inputType="numberDecimal"
-        android:layout_toRightOf="@+id/etTaille"
-        android:layout_below="@+id/etBiere"/>
+        android:layout_below="@+id/tvMasse"/>
 
     <TextView
         android:id="@+id/tvSexe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etTaille"
+        android:layout_below="@+id/etMasse"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvSexe"/>
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -118,11 +127,15 @@
             android:id="@+id/rbFemme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/texteSizeTV"
+            android:textColor="@color/grisFonce"
             android:text="@string/rbFemme" />
         <RadioButton
             android:id="@+id/rbHomme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/texteSizeTV"
+            android:textColor="@color/grisFonce"
             android:text="@string/rbHomme"/>
     </RadioGroup>
 
@@ -132,6 +145,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btnCalcule"
         android:onClick="onCalculeClick"
+        android:textSize="@dimen/texteSizeTV"
         android:layout_below="@+id/rgSexe"/>
 
     <TextView
@@ -139,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnCalcule"
+        android:textSize="@dimen/texteSizeTV"
         android:text="@string/tvResultat"/>
 
     <TextView

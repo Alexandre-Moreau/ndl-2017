@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="padding_button">8dp</dimen>
+    <dimen name="sizeTitrePompette">40dp</dimen>
+    <dimen name="marginTitrePompette">12dp</dimen>
+    <dimen name="texteSizeTV">18sp</dimen>
+    <dimen name="paddingLeftLayout">8dp</dimen>
+    <dimen name="sizeTitreListe">18sp</dimen>
+    <dimen name="sizeDetailsListe">16sp</dimen>
 </resources>

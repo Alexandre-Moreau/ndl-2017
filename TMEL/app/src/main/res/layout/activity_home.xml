@@ -54,17 +54,5 @@
         android:layout_below="@+id/btnSecours"
         android:onClick="onJeuClick"/>
 
-    <Button
-        android:id="@+id/btnAide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/titreAide"
-        android:drawableStart="@drawable/ic_aide"
-        android:drawableLeft="@drawable/ic_aide"
-        android:background="@android:color/transparent"
-        android:padding="20dp"
-        android:layout_below="@+id/btnJeu"
-        android:onClick="onAideClick"/>
-
 
 </RelativeLayout>
